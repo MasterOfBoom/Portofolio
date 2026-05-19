@@ -1,0 +1,48 @@
+<!-- contact-dialog.component.html -->
+
+<h2 mat-dialog-title>
+  Kontakt aufnehmen
+</h2>
+
+<mat-dialog-content>
+
+  <p class="subtitle">
+    Schreib mir gerne eine Nachricht.
+  </p>
+
+  <div class="form">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>E-Mail</mat-label>
+      <input matInput type="email" [(ngModel)]="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Nachricht</mat-label>
+      <textarea
+        matInput
+        rows="5"
+        [(ngModel)]="message"
+      ></textarea>
+    </mat-form-field>
+
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+
+  <button mat-button mat-dialog-close>
+    Schließen
+  </button>
+
+  <button mat-raised-button color="primary">
+    Senden
+  </button>
+
+</mat-dialog-actions>

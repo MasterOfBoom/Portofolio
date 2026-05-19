@@ -1,0 +1,36 @@
+<!-- header.component.html -->
+
+<mat-toolbar class="header">
+
+  <div class="logo">
+    <span class="logo-dot"></span>
+    Pius Hasselberger
+  </div>
+
+  <span class="spacer"></span>
+
+  <nav class="nav-links">
+
+    <a mat-button href="https://github.com/MasterOfBoom">
+      Projekte
+    </a>
+
+    <a mat-button href="#skills">
+      Skills
+    </a>
+
+    <button mat-button (click)="openContactDialog()">
+      Kontakt
+    </button>
+
+    <button
+      mat-raised-button
+      class="primary-action"
+      (click)="openContactCOOPDialog()"
+    >
+      Zusammenarbeiten
+    </button>
+
+  </nav>
+
+</mat-toolbar>

@@ -1,0 +1,119 @@
+<!-- home.component.html -->
+
+<section class="hero">
+  <div class="hero-content">
+
+    <span class="tag">
+      Fullstack Entwickler
+    </span>
+
+    <h1>
+      Moderne Webanwendungen<br>
+      mit Angular & Spring Boot
+    </h1>
+
+    <p>
+      Ich entwickle performante Fullstack Anwendungen mit Fokus auf
+      saubere Architektur, modernes UI Design und skalierbare Backend-Systeme.
+    </p>
+
+    <div class="hero-buttons">
+      <a mat-raised-button color="primary" href="https://github.com/MasterOfBoom">
+        Projekte ansehen
+      </a>
+
+      <button mat-stroked-button class="primary" (click)="openContactDialog()">
+        Kontakt
+      </button>
+    </div>
+
+    <div class="tech-stack">
+      <span>Angular</span>
+      <span>Spring Boot</span>
+      <span>Java</span>
+      <span>C++</span>
+      <span>Python</span>
+      <span>Assembly</span>
+    </div>
+
+  </div>
+
+  <div class="hero-side">
+
+    <mat-card class="info-card">
+      <mat-card-content>
+
+        <h3>Tech Stack</h3>
+
+        <div class="skills">
+          <div class="skill">
+            <span>Frontend</span>
+            <strong>Angular, TypeScript</strong>
+          </div>
+
+          <div class="skill">
+            <span>Backend</span>
+            <strong>Spring Boot, Java</strong>
+          </div>
+
+          <div class="skill">
+            <span>Low Level</span>
+            <strong>Assembly, C, C++</strong>
+          </div>
+
+          <div class="skill">
+            <span>Weitere</span>
+            <strong>Python, REST APIs</strong>
+          </div>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</section>
+
+<section class="projects" id="projects">
+
+  <div class="section-header">
+    <span class="section-tag">Portfolio</span>
+    <h2>Ausgewählte Projekte</h2>
+  </div>
+
+  <div class="project-grid">
+
+    <mat-card class="project-card">
+      <mat-card-content>
+        <h3>Enterprise Dashboard</h3>
+
+        <p>
+          Angular Dashboard mit Spring Boot Backend,
+          JWT Authentifizierung und API Integration.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="project-card">
+      <mat-card-content>
+        <h3>Compiler Experimente</h3>
+
+        <p>
+          Eigene Low-Level Projekte mit C, C++ und Assembly
+          zur Analyse von Speicher- und Systemarchitektur.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="project-card">
+      <mat-card-content>
+        <h3>Automation Tools</h3>
+
+        <p>
+          Python Tools zur Automatisierung von Workflows,
+          Datenverarbeitung und Systemprozessen.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</section>

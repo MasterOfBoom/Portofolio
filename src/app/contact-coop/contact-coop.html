@@ -1,0 +1,101 @@
+<!-- contact.html -->
+
+<h2 mat-dialog-title>
+  Projekt besprechen
+</h2>
+
+<mat-dialog-content>
+
+  <p class="subtitle">
+    Interesse an einer Zusammenarbeit,
+    einem Projekt oder einer Entwicklerstelle?
+  </p>
+
+  <div class="form">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Name *</mat-label>
+
+      <input
+        matInput
+        [(ngModel)]="name"
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>E-Mail *</mat-label>
+
+      <input
+        matInput
+        type="email"
+        [(ngModel)]="email"
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Firma</mat-label>
+
+      <input
+        matInput
+        [(ngModel)]="company"
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Anfrage</mat-label>
+
+      <mat-select [(ngModel)]="type">
+
+        <mat-option value="Projekt">
+          Projekt
+        </mat-option>
+
+        <mat-option value="Freelancing">
+          Freelancing
+        </mat-option>
+
+        <mat-option value="Jobangebot">
+          Jobangebot
+        </mat-option>
+
+        <mat-option value="Sonstiges">
+          Sonstiges
+        </mat-option>
+
+      </mat-select>
+
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Nachricht *</mat-label>
+
+      <textarea
+        matInput
+        rows="6"
+        [(ngModel)]="message"
+      ></textarea>
+    </mat-form-field>
+
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+
+  <button
+    mat-button
+    mat-dialog-close
+  >
+    Schließen
+  </button>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="loading"
+    (click)="sendMail()"
+  >
+    {{ loading ? 'Senden...' : 'Nachricht senden' }}
+  </button>
+
+</mat-dialog-actions>
